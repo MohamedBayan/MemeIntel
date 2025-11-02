@@ -1,0 +1,36 @@
+#!/bin/bash
+
+swift sft \
+    --model "Qwen/Qwen2-VL-7B-Instruct" \
+    --dataset "./data/ms_swift_formated/ArMeme/classification/train.jsonl" \
+    --val_dataset "./data/ms_swift_formated/ArMeme/classification/dev.jsonl" \
+    --train_type lora \
+    --quant_method bnb \
+    --quant_bits 4 \
+    --bnb_4bit_compute_dtype bfloat16 \
+    --bnb_4bit_quant_type nf4 \
+    --bnb_4bit_use_double_quant true \
+    --torch_dtype bfloat16 \
+    --num_train_epochs 3 \
+    --per_device_train_batch_size 2 \
+    --per_device_eval_batch_size 2 \
+    --learning_rate 1e-4 \
+    --lora_rank 16 \
+    --lora_alpha 16 \
+    --target_modules all-linear \
+    --freeze_vit false \
+    --freeze_aligner false \
+    --gradient_accumulation_steps 4 \
+    --eval_steps 150 \
+    --save_steps 150 \
+    --save_total_limit 2 \
+    --logging_steps 5 \
+    --max_length 4096 \
+    --dataset_shuffle false \
+    --output_dir "./training_checkpoints/ArMeme/qwen2-vl-7b-classification-ss-lora" \
+    --model_author QCRI \
+    --weight_decay 0.01 \
+    --warmup_ratio 0.05 \
+    --use_hf true \
+    --dataset_num_proc 32 \
+    --dataloader_num_workers 0
