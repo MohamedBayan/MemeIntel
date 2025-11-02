@@ -103,7 +103,7 @@ See `scripts/batch_infer/README.md` for detailed documentation.
 
 ## Training
 
-### Single-Task Training (Classification or Explanation)
+### Single-Stage Training (Classification or Explanation)
 
 ```bash
 # ArMeme - Classification
@@ -123,9 +123,6 @@ bash scripts/train/Hateful_Meme/llama-3.2-11b-explanation-ss-lora.sh
 ### Multi-Stage Training
 
 ```bash
-# Stage 1: Train on ArMeme Arabic explanations
-bash scripts/train/ArMeme/llama-3.2-11b-explanation_ar-ss-lora.sh
-
 # Stage 2: Fine-tune on Hateful Memes explanations
 bash scripts/train/Hateful_Meme/llama-3.2-11b-explanation-ms-lora.sh
 ```
