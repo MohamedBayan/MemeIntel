@@ -1,4 +1,4 @@
-# [MemeIntel: Explainable Detection of Propagandistic and Hateful Memes](https://arxiv.org/abs/2502.16612)
+# [MemeIntel: Explainable Detection of Propagandistic and Hateful Memes](https://aclanthology.org/2025.emnlp-main.1539/)
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.10+-green.svg)](https://python.org)
