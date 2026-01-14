@@ -2,7 +2,7 @@
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.10+-green.svg)](https://python.org)
-[![Paper](https://img.shields.io/badge/Paper-arXiv-red.svg)](https://arxiv.org/abs/2502.16612)
+[![Paper](https://img.shields.io/badge/Paper-arXiv-red.svg)](https://aclanthology.org/2025.emnlp-main.1539/)
 [![Dataset](https://img.shields.io/badge/Dataset-HuggingFace-yellow.svg)](https://huggingface.co/datasets/QCRI/MemeXplain)
 [![Model](https://img.shields.io/badge/Model-HuggingFace-yellow.svg)](https://huggingface.co/QCRI/MemeIntel)
 
